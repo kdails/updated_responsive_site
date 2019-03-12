@@ -279,7 +279,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 65%;
 }
 
 .nav li a {
@@ -420,20 +420,80 @@ a:hover {color: #4D9CA3;}
   vertical-align: middle;
 }
 
+/* Responsive Modifications */
+
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 767px) {
+  .navbar {
+    background-color: #027984;
+  }
+  .nav li a {
+    color: #FFFFFF;
+    font-size: 2em;
+    text-align:center;
+}
+  .navbar-brand {
+    background-color:#000000;
+    color:#FFFFFF;
+    font-size: 2em;
+}
+  .nav>li>a:focus,
+  .nav>li>a:hover {
+    color: #FFFFFF;
+    background-color:#027984;
+}
+  li.active a {
+    color: #ffffff;
+    background-color:#000000;
+}
   .column {
+    margin-top: 10vw;
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
   }
+  h1 {
+    font-size: 2.5em;
+    margin-top: 7vw;
+    text-align: center;
 }
+  h3, h2, {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  button{
+    margin: 0 auto;
+}
+  footer {
+    margin-bottom: 1em;
+    font-size:25px;
+    align-self-left;
+  }
+  header {
+    text-decoration: overline;
+
+  }
+  img {
+    width: 100%
+  }
+  .col-md-4 {
+    text-align: left;
+  }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 700px) {
   .column {
+    margin-top: 5vw;
     -ms-flex: 20%;
     flex: 20%;
     max-width: 20%;
+  }
+  img {
+    width: 65%
+  }
+  .column img {
+    margin-top: 2px;
+    vertical-align: middle;
   }
 }
