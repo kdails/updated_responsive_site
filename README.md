@@ -1,2 +1,1 @@
-# updated_responsive_site
-re-submission for responsive website submission
+# portfolio_responsive
